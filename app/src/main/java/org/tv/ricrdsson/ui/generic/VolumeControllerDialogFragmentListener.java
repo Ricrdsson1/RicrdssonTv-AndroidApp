@@ -1,0 +1,193 @@
+package org.tv.ricrdsson.ui.generic;
+
+import android.app.Dialog;
+import android.content.Context;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.view.KeyEvent;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatDialogFragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.preference.PreferenceManager;
+
+import org.tv.ricrdsson.Settings;
+import org.tv.ricrdsson.databinding.VolumeControllerDialogBinding;
+import org.tv.ricrdsson.host.HostConnectionObserver;
+import org.tv.ricrdsson.host.HostManager;
+import org.tv.ricrdsson.jsonrpc.ApiCallback;
+import org.tv.ricrdsson.jsonrpc.ApiMethod;
+import org.tv.ricrdsson.jsonrpc.method.Application;
+import org.tv.ricrdsson.jsonrpc.type.GlobalType;
+import org.tv.ricrdsson.ui.widgets.VolumeLevelIndicator;
+import org.tv.ricrdsson.utils.LogUtils;
+
+public class VolumeControllerDialogFragmentListener extends AppCompatDialogFragment
+        implements HostConnectionObserver.ApplicationEventsObserver,
+        VolumeLevelIndicator.VolumeBarTouchTrackerListener {
+
+    private static final String TAG = LogUtils.makeLogTag(VolumeControllerDialogFragmentListener.class);
+    private static final int AUTO_DISMISS_DELAY = 2000;
+
+    VolumeControllerDialogBinding binding;
+
+    private final Handler callbackHandler = new Handler(Looper.getMainLooper());
+    private HostManager hostManager = null;
+    private final ApiCallback<Integer> defaultIntActionCallback = ApiMethod.getDefaultActionCallback();
+    private final View.OnClickListener onMuteToggleOnClickListener = v -> {
+        cancelDismissDialog();
+        Application.SetMute action = new Application.SetMute();
+        action.execute(hostManager.getConnection(), new ApiCallback<Boolean>() {
+            @Override
+            public void onSuccess(Boolean result) {
+                //We depend on the listener to correct the mute button state
+            }
+
+            @Override
+            public void onError(int errorCode, String description) {
+                LogUtils.LOGE(TAG,
+                        "Got an error calling Application.SetMute. Error code: " + errorCode +
+                                ", description: " + description);
+            }
+        }, callbackHandler);
+    };
+    private long lastVolumeChangeInteractionEvent;
+    private final Runnable dismissDialog = new Runnable() {
+        @Override
+        public void run() {
+            long timeSinceLastEvent = System.currentTimeMillis() - lastVolumeChangeInteractionEvent;
+            if (timeSinceLastEvent >= AUTO_DISMISS_DELAY) {
+                Dialog dialog = getDialog();
+                if (dialog != null && dialog.isShowing()) {
+                    dialog.dismiss();
+                }
+            }
+        }
+    };
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        requireDialog().setOnKeyListener((dialog, keyCode, event) -> {
+            boolean handled = handleVolumeKeyEvent(getContext(), event);
+            if (handled) {
+                delayedDismissDialog();
+            }
+            return handled;
+        });
+    }
+
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        binding = VolumeControllerDialogBinding.inflate(inflater, container, false);
+        return binding.getRoot();
+    }
+
+    @Override
+    public void show(@NonNull FragmentManager manager, String tag) {
+        super.show(manager, tag);
+        delayedDismissDialog();
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        hostManager = HostManager.getInstance(requireContext());
+
+        setListeners();
+
+        registerObserver();
+        // for orientation change
+        delayedDismissDialog();
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        HostConnectionObserver hostConnectionObserver = hostManager.getHostConnectionObserver();
+        if (hostConnectionObserver != null) {
+            hostConnectionObserver.unregisterApplicationObserver(this);
+        }
+        binding = null;
+    }
+
+    private void registerObserver() {
+        HostConnectionObserver hostConnectionObserver = hostManager.getHostConnectionObserver();
+        if (hostConnectionObserver == null) {
+            return;
+        }
+
+        hostConnectionObserver.registerApplicationObserver(this);
+        hostConnectionObserver.refreshWhatsPlaying();
+    }
+
+    private void setListeners() {
+        binding.vcdVolumeMute.setOnClickListener(onMuteToggleOnClickListener);
+
+        binding.vcdVolumeLevelIndicator.setOnVolumeChangeListener(
+                volume -> {
+                    cancelDismissDialog();
+                    new Application.SetVolume(volume).execute(hostManager.getConnection(),
+                                                              defaultIntActionCallback, callbackHandler);
+                });
+        binding.vcdVolumeLevelIndicator.setVolumeBarTouchTrackerListener(this);
+    }
+
+    @Override
+    public void onApplicationVolumeChanged(int volume, boolean muted) {
+        if (binding == null) return;
+        binding.vcdVolumeLevelIndicator.setVolume(muted, volume);
+        binding.vcdVolumeMute.setHighlight(muted);
+    }
+
+    private void delayedDismissDialog() {
+        cancelDismissDialog();
+        callbackHandler.postDelayed(dismissDialog, AUTO_DISMISS_DELAY);
+    }
+
+    private void cancelDismissDialog() {
+        lastVolumeChangeInteractionEvent = System.currentTimeMillis();
+        callbackHandler.removeCallbacks(dismissDialog);
+    }
+
+    @Override
+    public void onStartTrackingTouch() {
+        cancelDismissDialog();
+    }
+
+    @Override
+    public void onStopTrackingTouch() {
+        delayedDismissDialog();
+    }
+
+    public static boolean handleVolumeKeyEvent(Context context, KeyEvent event) {
+        String useHWVolKeysPreferences = PreferenceManager.getDefaultSharedPreferences(context)
+                                                          .getString(Settings.KEY_PREF_USE_HW_VOL_KEYS,
+                                                                     Settings.DEFAULT_PREF_USE_HW_VOL_KEYS);
+        boolean shouldInterceptKey = useHWVolKeysPreferences.equals(Settings.USE_HW_VOL_KEYS_ALWAYS) ||
+                                     useHWVolKeysPreferences.equals(Settings.USE_HW_VOL_KEYS_WHEN_IN_FOREGROUND);
+
+        if (shouldInterceptKey) {
+            int action = event.getAction();
+            int keyCode = event.getKeyCode();
+            if (keyCode == KeyEvent.KEYCODE_VOLUME_UP || keyCode == KeyEvent.KEYCODE_VOLUME_DOWN) {
+                String volume = (keyCode == KeyEvent.KEYCODE_VOLUME_UP)?
+                        GlobalType.IncrementDecrement.INCREMENT:
+                        GlobalType.IncrementDecrement.DECREMENT;
+                if (action == KeyEvent.ACTION_DOWN) {
+                    new Application.SetVolume(volume)
+                            .execute(HostManager.getInstance(context).getConnection(), null, null);
+                }
+                return true;
+            }
+        }
+        return false;
+    }
+
+}

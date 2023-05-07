@@ -31,7 +31,7 @@
             android:id="@+id/hosts_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:name="org.xbmc.kore.ui.sections.hosts.HostListFragment" />
+            android:name="org.tv.ricrdsson.ui.sections.hosts.HostListFragment" />
     </LinearLayout>
 
     <androidx.fragment.app.FragmentContainerView
@@ -39,6 +39,6 @@
         android:layout_width="@dimen/navigation_drawer_width"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:name="org.xbmc.kore.ui.generic.NavigationDrawerFragment" />
+        android:name="org.tv.ricrdsson.ui.generic.NavigationDrawerFragment" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

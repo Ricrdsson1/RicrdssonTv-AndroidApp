@@ -46,6 +46,6 @@
               android:layout_width="@dimen/navigation_drawer_width"
               android:layout_height="match_parent"
               android:layout_gravity="start"
-              android:name="org.xbmc.kore.ui.generic.NavigationDrawerFragment"/>
+              android:name="org.tv.ricrdsson.ui.generic.NavigationDrawerFragment"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>

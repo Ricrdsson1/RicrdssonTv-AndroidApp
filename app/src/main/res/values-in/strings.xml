@@ -88,7 +88,7 @@
     <string name="pause_call_incoming_title">Panggilan masuk</string>
     <string name="queue_on_kodi">Antri di Kodi</string>
     <string name="play_on_kodi">Putar di Kodi</string>
-    <string name="about_desc">\\0A9 2018 XBMC Foundation&lt;br&gt;&lt;br&gt; Silakan menilai kami di &lt;b&gt;&lt;a href=market://details\?id=org.xbmc.kore&gt;Google Play&lt;/a&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; Jika Anda membutuhkan bantuan, cek &lt;a href=http://forum.kodi.tv/forumdisplay.php\?fid=129&gt;forum&lt;/a&gt;kami</string>
+    <string name="about_desc">\\0A9 2018 XBMC Foundation&lt;br&gt;&lt;br&gt; Silakan menilai kami di &lt;b&gt;&lt;a href=market://details\?id=org.tv.ricrdsson&gt;Google Play&lt;/a&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; Jika Anda membutuhkan bantuan, cek &lt;a href=http://forum.kodi.tv/forumdisplay.php\?fid=129&gt;forum&lt;/a&gt;kami</string>
     <string name="about">Tentang</string>
     <string name="download_network_types_summary">Pilih jenis jaringan di mana unduhan media diizinkan</string>
     <string name="download_network_types_title">Batasi unduhan media</string>

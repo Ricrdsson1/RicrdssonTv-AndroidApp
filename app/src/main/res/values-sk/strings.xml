@@ -20,7 +20,7 @@
     <!-- Navigation drawer tips -->
     <string name="navigation_drawer_open">Otvoriť navigačné menu</string>
     <string name="navigation_drawer_close">Zavrieť navigačné menu</string>
-    <string name="xbmc_media_center">Multimediálne centrum</string>
+    <string name="xbmc_media_center">RičrdssonTv</string>
     <string name="home">Domov</string>
     <string name="movies">Filmy</string>
     <string name="tv_shows">TV šou</string>
@@ -43,17 +43,17 @@
     <string name="favourites">Obľúbené</string>
     <string name="weather">Počasie</string>
     <string name="system">Systém</string>
-    <string name="no_xbmc_configured">Multimediálne centrum nenastavené</string>
-    <string name="add_xbmc">Pridať multimediálne centrum</string>
-    <string name="xbmc_quit">Multimediálne centrum sa ukončuje.</string>
-    <string name="wol_sent">Signál na prebudenie multimediálneho centra odoslaný.</string>
+    <string name="no_xbmc_configured">RičrdssonTv nenastavené</string>
+    <string name="add_xbmc">Pridať RičrdssonTv</string>
+    <string name="xbmc_quit">RičrdssonTv sa ukončuje.</string>
+    <string name="wol_sent">Signál na prebudenie RičrdssonTv odoslaný.</string>
     <string name="power">Napájanie</string>
     <string name="quit">Ukončiť</string>
     <string name="suspend">Uspať</string>
     <string name="reboot">Reštartovať</string>
     <string name="shutdown">Vypnúť</string>
     <string name="send">Odoslať</string>
-    <string name="send_text">Poslať text do multimediálneho centra</string>
+    <string name="send_text">Poslať text do RičrdssonTv</string>
     <string name="text_to_send">Text na poslanie</string>
     <string name="finish_after_send">Po odoslaní ukončiť</string>
     <string name="library_actions">Správa knižnice</string>
@@ -69,29 +69,31 @@
     <!-- String used in add host wizard -->
     <string name="wizard_welcome">Vitajte</string>
     <string name="wizard_welcome_message"><![CDATA[
-    Začnite pridaním multimediálneho centra. Uistite sa, že rozhranie Kodi/XBMC je spustené, správne nastavené a na rovnakej sieti, ako toto zariadenie.<br/><br/>
-    Pomoc s nastavením nájdete <a href="http://syncedsynapse.com/kore/kore-faq/">na tejto adrese</a>.<br/><br/>
+    Začnite pridaním RičrdssonTv. Uistite sa, že rozhranie RičrdssonTv je spustené, správne nastavené a na rovnakej sieti, ako toto zariadenie.<br/><br/>
+    Pomoc s nastavením nájdete <a href="https://richardpodzemsky.cz/">na tejto adrese</a>.<br/><br/>
     Ak ste pripravený, pokračujte tlačidlom <b><i>Ďalej</i></b>.
     ]]></string>
     <string name="wizard_search_message"><![CDATA[
-    Hľadajú sa multimediálne centrá vo vašej lokálnej sieti…<br/>
+    Hľadajú sa RičrdssonTv vo vašej lokálnej sieti…<br/>
     ]]></string>
     <string name="wizard_search_no_host_found"><![CDATA[
-    Nenašli sa multimediálne centrá vo vašej sieti.<br/>Ak potrebujete pomoc s nastavením, nájdete ju <a href="http://syncedsynapse.com/kore/kore-faq/">na tejto adrese</a>.<br/><br/>
+    Nenašli sa RičrdssonTv vo vašej sieti.<br/>Ak potrebujete pomoc s nastavením, nájdete ju <a href="https://richardpodzemsky.cz/">na tejto adrese</a>.<br/><br/>
     Pokračujte tlačidlom <i>Hľadať</i>, ak chcete hľadanie opakovať, alebo tlačidlom <i>Ďalej</i> pre ručné nastavenie.
     ]]></string>
     <string name="wizard_search_no_network_connection"><![CDATA[
-    Prosím, pred hľadaním multimediálnych centier povolte sieťové pripojenie.<br/>
+    Prosím, pred hľadaním RičrdssonTv povolte sieťové pripojenie.<br/>
     ]]></string>
-    <string name="wizard_search_host_found">Našli sa tieto multimediálne centrá vo vašej sieti.<br/><br/>Vyberte jedno a pridajte ho, alebo použite tlačidlo <b>Ďalej</b> na ručné pridanie iného centra.</string>
+    <string name="wizard_search_host_found"><![CDATA[
+    Našli sa tieto RičrdssonTv vo vašej sieti.<br/><br/>Vyberte jedno a pridajte ho, alebo použite tlačidlo <i>Ďalej</i> na ručné pridanie iného centra.
+    ]]></string>
     <string name="no_network_connection">Žiadne pripojenie k sieti</string>
     <string name="searching">Vyhľadávanie…</string>
-    <string name="no_xbmc_found">Nenašlo sa multimediálne centrum</string>
-    <string name="xbmc_found">Našlo sa multimediálne centrum</string>
+    <string name="no_xbmc_found">Nenašlo sa RičrdssonTv</string>
+    <string name="xbmc_found">Našlo sa RičrdssonTv</string>
     <string name="wizard_manual_configuration">Ručné nastavenie</string>
-    <string name="wizard_manual_configuration_message">Zadajte nastavenia vášho multimediálneho centra:</string>
+    <string name="wizard_manual_configuration_message">Zadajte nastavenia vášho RičrdssonTv:</string>
     <string name="wizard_manual_configuration_message_advanced">Pokročilé nastavenia (ponechajte prázdne pre východzie)</string>
-    <string name="wizard_xbmc_name">Názov multimediálneho centra</string>
+    <string name="wizard_xbmc_name">Názov RičrdssonTv</string>
     <string name="wizard_xbmc_ip">Adresa</string>
     <string name="wizard_xbmc_port">Port</string>
     <string name="wizard_xbmc_username">Používateľské meno</string>
@@ -102,20 +104,24 @@
     <string name="wizard_xbmc_use_tcp">Použiť TCP</string>
     <string name="wizard_xbmc_event_server_port">ES Port (9777)</string>
     <string name="wizard_xbmc_use_event_server">Použiť EventServer</string>
-    <string name="wizard_no_name_specified">Prosím, zadajte názov tohto multimediálneho centra, aby ste ho neskôr mohli rozoznať.</string>
-    <string name="wizard_no_address_specified">Prosím, zadajte adresu tohto multimediálneho centra, aby som ho mohol nájsť.</string>
-    <string name="wizard_invalid_http_port_specified">Prosím, zadajte platný HTTP port tohto multimediálneho centra.</string>
-    <string name="wizard_invalid_tcp_port_specified">Prosím, zadajte platný TCP port tohto multimediálneho centra.</string>
-    <string name="wizard_invalid_es_port_specified">Prosím, zadajte platný EventServer port tohto multimediálneho centra.</string>
+    <string name="wizard_no_name_specified">Prosím, zadajte názov tohto RičrdssonTv, aby ste ho neskôr mohli rozoznať.</string>
+    <string name="wizard_no_address_specified">Prosím, zadajte adresu tohto RičrdssonTv, aby som ho mohol nájsť.</string>
+    <string name="wizard_invalid_http_port_specified">Prosím, zadajte platný HTTP port tohto RičrdssonTv.</string>
+    <string name="wizard_invalid_tcp_port_specified">Prosím, zadajte platný TCP port tohto RičrdssonTv.</string>
+    <string name="wizard_invalid_es_port_specified">Prosím, zadajte platný EventServer port tohto RičrdssonTv.</string>
     <string name="wizard_connecting_to_xbmc_title">Pripája sa k %1$s…</string>
-    <string name="wizard_connecting_to_xbmc_message">Pripájam sa k vášmu multimediálnemu centru. Prosím, čakajte…</string>
-    <string name="wizard_empty_authentication">Kodi/XBMC vyžaduje prihlásenie.\nProsím, zadajte používateľské meno a heslo.</string>
+    <string name="wizard_connecting_to_xbmc_message">Pripájam sa k vášmu RičrdssonTv. Prosím, čakajte…</string>
+    <string name="wizard_empty_authentication">RičrdssonTv vyžaduje prihlásenie.\nProsím, zadajte používateľské meno a heslo.</string>
     <string name="wizard_incorrect_authentication">Nesprávne používateľské meno a/alebo heslo.\nProsím, skontrolujte vaše prihlasovacie údaje.</string>
-    <string name="wizard_success_connecting">Pripojený ku Kodi/XBMC.</string>
-    <string name="wizard_error_connecting">Nepodarilo sa pripojiť ku Kodi/XBMC.\nProsím, skontrolujte nastavenia.</string>
-    <string name="wizard_done_message">Vaše multimediálne centrum je nastavené.<br/> Môžete použiť diaľkový ovládač na jeho správu. Vaša knižnica bola synchronizovaná a bude prístupná o chvíľu.<br/><br/> Použite tlačidlo <b>Dokončiť</b> a spravujte vaše multimediálne centrum týmto diaľkovým ovládačom.</string>
-    <string name="wizard_zeroconf_no_host_address">Nepodarilo sa získať adresu tohto multimediálneho centra!</string>
-    <string name="wizard_zeroconf_cant_connect_no_host_address">Nepodarilo sa pripojiť k tomuto multimediálnemu centru, pretože nebolo možné získať jeho adresu.</string>
+    <string name="wizard_success_connecting">Pripojený ku RičrdssonTv.</string>
+    <string name="wizard_error_connecting">Nepodarilo sa pripojiť ku RičrdssonTv.\nProsím, skontrolujte nastavenia.</string>
+    <string name="wizard_done_message"><![CDATA[
+    Vaše RičrdssonTv je nastavené.<br/>
+    Môžete použiť diaľkový ovládač na jeho správu. Vaša knižnica bola synchronizovaná a bude prístupná o chvíľu.<br/><br/>
+    Použite tlačidlo <b><i>Dokončiť</i></b> a spravujte vaše RičrdssonTv týmto diaľkovým ovládačom.
+    ]]></string>
+    <string name="wizard_zeroconf_no_host_address">Nepodarilo sa získať adresu tohto RičrdssonTv!</string>
+    <string name="wizard_zeroconf_cant_connect_no_host_address">Nepodarilo sa pripojiť k tomuto RičrdssonTv, pretože nebolo možné získať jeho adresu.</string>
     <string name="play">Prehrať</string>
     <string name="pause">Pauza</string>
     <string name="stop">Stop</string>
@@ -151,14 +157,14 @@
     <string name="remove">Odstrániť</string>
     <string name="edit">Upraviť</string>
     <string name="wake_up">Zobudiť</string>
-    <string name="edit_xbmc">Upraviť multimediálne centrum</string>
-    <string name="delete_xbmc">Vymazať multimediálne centrum</string>
-    <string name="delete_xbmc_confirm">Určite chcete vymazať toto multimediálne centrum?</string>
+    <string name="edit_xbmc">Upraviť RičrdssonTv centrum</string>
+    <string name="delete_xbmc">Vymazať RičrdssonTv</string>
+    <string name="delete_xbmc_confirm">Určite chcete vymazať toto RičrdssonTv?</string>
     <string name="queue_file">Fronta</string>
     <string name="play_file">Prehrať</string>
     <string name="play_from_here">Prehrať odtiaľto</string>
     <string name="connecting_to_xbmc">Pripája sa…</string>
-    <string name="unable_to_connect_to_xbmc">Nepodarilo sa pripojiť k multimediálnemu centru</string>
+    <string name="unable_to_connect_to_xbmc">Nepodarilo sa pripojiť k RičrdssonTv</string>
     <string name="connected_to_xbmc">Pripojené</string>
     <string name="xbmc_available">Dostupné</string>
     <string name="xbmc_unavailable">Nedostupné</string>
@@ -175,24 +181,24 @@
     <string name="fanart">Fanart</string>
     <string name="poster">Plagát</string>
     <string name="thumbnail">Miniatúra</string>
-    <string name="error_getting_properties">Nepodarilo sa načítať nastavenia Kodi/XBMC.
-\nChybové hlásenie: %1$s</string>
-    <string name="error_executing_subtitles">Nepodarilo sa spustiť rozšírenie pre titulky.
-\nChybové hlásenie: %1$s</string>
-    <string name="error_getting_addon_info">Nepodarilo sa získať informácie o rozšírení.
-\nChybové hlásenie: %1$s</string>
-    <string name="error_getting_source_info">Nepodarilo sa načítať zoznam súborov.
-\nChybové hlásenie: %1$s</string>
-    <string name="error_play_media_file">Nepodarilo sa prehrať multimediálny súbor.
-\nChybové hlásenie: %1$s</string>
-    <string name="error_play_local_file">Nepodarilo sa prehrať lokálny multimediálny súbor.
-\nChybové hlásenie: %1$s</string>
-    <string name="error_queue_media_file">Nepodarilo sa zaradiť súbor do fronty.
-\nChybové hlásenie: %1$s</string>
-    <string name="error_get_active_player">Nepodarilo sa aktivovať prehrávač.
-\nChybové hlásenie: %1$s</string>
-    <string name="error_share_video">Nepodarilo sa zdielať video do Kodi/XBMC.</string>
-    <string name="error_reading_local_storage">Nepodarilo sa načítať lokálne úložisko. Dali ste Kore oprávnenia na prístup k lokálnemu úložisku?</string>
+    <string name="error_getting_properties">Nepodarilo sa načítať nastavenia RičrdssonTv.\nChybové hlásenie:
+        %1$s.</string>
+    <string name="error_executing_subtitles">Nepodarilo sa spustiť rozšírenie pre titulky.\nChybové hlásenie: %1$s.</string>
+    <string name="error_getting_addon_info">Nepodarilo sa získať informácie o rozšírení.\nChybové hlásenie:
+        %1$s.</string>
+    <string name="error_getting_source_info">Nepodarilo sa načítať zoznam súborov.\nChybové hlásenie:
+        %1$s.</string>
+    <string name="error_play_media_file">Nepodarilo sa prehrať multimediálny súbor.\nChybové hlásenie:
+        %1$s.</string>
+    <string name="error_play_local_file">Nepodarilo sa prehrať lokálny multimediálny súbor.\n
+    	Chybové hlásenie:
+        %1$s.</string>
+    <string name="error_queue_media_file">Nepodarilo sa zaradiť súbor do fronty.\nChybové hlásenie:
+        %1$s.</string>
+    <string name="error_get_active_player">Nepodarilo sa aktivovať prehrávač.\nChybové hlásenie:
+        %1$s.</string>
+    <string name="error_share_video">Nepodarilo sa zdielať video do RičrdssonTv.</string>
+    <string name="error_reading_local_storage">Nepodarilo sa načítať lokálne úložisko. Dali ste RičrdssonTv oprávnenia na prístup k lokálnemu úložisku?</string>
     <string name="error_starting_http_server">Nepodarilo sa vytvoriť alebo spustiť HTTP server.</string>
     <string name="directors">Réžia:</string>
     <string name="studio">Štúdio:</string>
@@ -233,10 +239,10 @@
     <string name="action_search_artists">Hľadať umelcov</string>
     <string name="action_search_genres">Hľadať žánre</string>
     <string name="action_search_music_videos">Hľadať videá</string>
-    <string name="add_to_playlist">Pridať do fronty</string>
-    <string name="item_added_to_playlist">Pridané do fronty</string>
-    <string name="item_sent_to_kodi">Poslané do Kodi</string>
-    <string name="no_suitable_playlist">Nenašla sa vhodná fronta prehrávania na pridanie tohto typu média.</string>
+    <string name="add_to_playlist">Pridať do zoznamu</string>
+    <string name="item_added_to_playlist">Pridané do zoznamu</string>
+    <string name="item_sent_to_kodi">Poslané do RičrdssonTv</string>
+    <string name="no_suitable_playlist">Pre tento typ média nebol nájdený žiadny zoznam.</string>
     <string name="imdb">IMDb</string>
     <string name="download">Stiahnuť</string>
     <string name="confirm_movie_download">Určite chcete stiahnuť tento film?\nFilm bude stiahnutý na pozadí, ale môže to chvíľu trvať.</string>
@@ -249,7 +255,7 @@
     <string name="download_files_exists">Jeden alebo viacero súbor už existuje.\nAk súbory majú rovnaký názov, majú sa prepísať alebo uložiť pod iným názvom?</string>
     <string name="overwrite">Prepísať</string>
     <string name="download_with_new_name">Iný názov</string>
-    <string name="download_file_description">Stiahnuť z vášho multimediálneho centra</string>
+    <string name="download_file_description">Stiahnuť z vášho RičrdssonTv</string>
     <string name="num_episodes">Epizód: %1$d  |  Nevidených: %2$d</string>
     <string name="premiered">Premiéra: %1$s</string>
     <string name="tvshow_overview">Prehľad</string>
@@ -304,7 +310,12 @@
     <string name="remote_bar_items">Zástupci na spodnom paneli</string>
     <string name="nav_drawer_items">Zástupci na bočnom menu</string>
     <string name="about">O aplikácii</string>
-    <string name="about_desc">\\0A9 2018 XBMC Foundation&lt;br&gt;&lt;br&gt; Prosím, ohodnoďte nás na &lt;b&gt;&lt;a href=market://details\?id=org.xbmc.kore&gt;Google Play&lt;/a&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; Ak potrebujete pomoc, obráťte sa na naše &lt;b&gt;&lt;a href=http://forum.kodi.tv/forumdisplay.php\?fid=129&gt;fórum&lt;/a&gt;&lt;/b&gt;</string>
+    <string name="about_desc"><![CDATA[
+        @ 2023 Ricrdsson Foundation<br><br>
+        Prosím, ohodnoďte nás v obchode <b><a href="market://details?id=org.tv.ricrdsson">Google Play</a></b><br><br>
+
+        Ak potrebujete pomoc, skúste <b><a href="https://richardpodzemsky.cz">web</a></b>
+    ]]></string>
     <!--&lt;!&ndash; String for coffee &ndash;&gt;-->
     <!--<string name="buy_me_coffee">Buy me a coffee</string>-->
     <!--<string name="expresso_please">Espresso, please. Thanks!</string>-->
@@ -315,24 +326,16 @@
     <!--<string name="error_querying_inventory">Failed to query inventory.</string>-->
     <!--<string name="error_during_purchased">An error occurred during purchase.</string>-->
     <!--<string name="purchase_thanks">Thanks for your support!</string>-->
-    <string name="play_on_kodi">Prehrať v Kodi</string>
-    <string name="queue_on_kodi">Fronta na Kodi</string>
+    <string name="play_on_kodi">Prehrať v RičrdssonTv</string>
+    <string name="queue_on_kodi">Fronta na RičrdssonTv</string>
     <string name="pause_call_incoming_title">Prichádzajúci hovor</string>
-    <string name="pause_call_incoming_message">Skontrolujte svoj telefón, niekto vám volá</string>
-    <string name="error_getting_pvr_info">Nepodarilo sa získať informácie o PVR
-\n
-\nPopis chyby: %1$s</string>
-    <string name="might_not_have_pvr">Nebolo možné získať informácie o PVR.
-\n
-\nVaše multimediálne centrum možno nemá tuner alebo nie je nakonfigurovaný. Ak chcete túto položku odstrániť z bočnej ponuky, môžete to urobiť na obrazovke Nastavenia.</string>
-    <string name="error_starting_channel">Pri spustení prehrávania kanála došlo k chybe
-\nPopis: %1$s</string>
-    <string name="error_favourites">Nemožno získať obľúbené
-\nPopis chyby: %1$s</string>
-    <string name="error_starting_recording">Pri prehrávaní nahrávky došlo k chybe
-\nPopis: %1$s</string>
-    <string name="error_starting_to_record">Pri nahrávaní došlo k chybe
-\nPopis: %1$s</string>
+    <string name="pause_call_incoming_message">Pozrite sa na váš telefón, niekto vám volá.</string>
+    <string name="error_getting_pvr_info">Počas preberania pvr informácií nastala chyba: %1$s</string>
+    <string name="might_not_have_pvr">Počas preberania informácií o kanáloch nastala chyba. Vaše RičrdssonTv pravdepodobne nemá tuner alebo tuner nie je nastavený\n\nAk je to tak, odoberte túto položku z bočného menu v nastaveniach.</string>
+    <string name="error_starting_channel">Pri prehrávaní kanála došlo k chybe: %1$s</string>
+    <string name="error_favourites">Počas preberania obľúbených s popisom došlo k chybe: %1$s</string>
+    <string name="error_starting_recording">Pri nahrávaní došlo k chybe: %1$s</string>
+    <string name="error_starting_to_record">Počas nahrávania došlo k chybe: %1$s</string>
     <string name="channel_switching">Prepína sa na kanál %1$s</string>
     <string name="starting_recording">Začína nahrávanie %1$s</string>
     <string name="refresh">Obnoviť</string>

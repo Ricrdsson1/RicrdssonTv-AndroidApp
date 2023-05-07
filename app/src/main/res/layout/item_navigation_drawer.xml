@@ -27,12 +27,12 @@
         android:id="@+id/drawer_item_icon"
         android:layout_width="@dimen/small_icon_size"
         android:layout_height="@dimen/small_icon_size"
+        android:layout_gravity="center_vertical"
         android:layout_marginLeft="@dimen/default_padding"
         android:layout_marginRight="@dimen/default_padding"
-        android:layout_gravity="center_vertical"
         android:src="@mipmap/ic_launcher"
         app:tint="?attr/colorOnSurfaceVariant"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/drawer_item_title"

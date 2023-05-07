@@ -15,7 +15,7 @@
    limitations under the License.
 -->
 <merge xmlns:android="http://schemas.android.com/apk/res/android">
-    <org.xbmc.kore.ui.widgets.HighlightButton
+    <org.tv.ricrdsson.ui.widgets.HighlightButton
         android:id="@+id/volume_mute"
         android:layout_width="0dp"
         android:layout_weight="1"
@@ -24,14 +24,14 @@
         android:src="@drawable/ic_round_volume_off_24"
         android:contentDescription="@string/volume_mute"/>
 
-    <org.xbmc.kore.ui.widgets.VolumeLevelIndicator
+    <org.tv.ricrdsson.ui.widgets.VolumeLevelIndicator
         android:id="@+id/volume_level_indicator"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="2"
         android:orientation="vertical" />
 
-    <org.xbmc.kore.ui.widgets.RepeatModeButton
+    <org.tv.ricrdsson.ui.widgets.RepeatModeButton
         android:id="@+id/repeat"
         android:layout_width="0dp"
         android:layout_weight="1"
@@ -39,7 +39,7 @@
         style="@style/Widget.Kore.Button.Borderless"
         android:src="@drawable/ic_round_repeat_24"
         android:contentDescription="@string/repeat"/>
-    <org.xbmc.kore.ui.widgets.HighlightButton
+    <org.tv.ricrdsson.ui.widgets.HighlightButton
         android:id="@+id/shuffle"
         android:layout_width="0dp"
         android:layout_weight="1"
@@ -57,7 +57,7 @@
         android:src="@drawable/ic_round_spatial_audio_off_24"
         android:contentDescription="@string/audiostreams"/>
 
-    <org.xbmc.kore.ui.widgets.HighlightButton
+    <org.tv.ricrdsson.ui.widgets.HighlightButton
         android:id="@+id/subtitles"
         android:layout_width="0dp"
         android:layout_weight="1"
@@ -66,7 +66,7 @@
         android:src="@drawable/ic_round_subtitles_24"
         android:contentDescription="@string/subtitles"/>
 
-    <org.xbmc.kore.ui.widgets.HighlightButton
+    <org.tv.ricrdsson.ui.widgets.HighlightButton
         android:id="@+id/party_mode"
         android:layout_width="0dp"
         android:layout_weight="1"

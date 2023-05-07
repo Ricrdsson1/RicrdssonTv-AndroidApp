@@ -28,7 +28,7 @@
         android:id="@+id/swipe_refresh_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <org.xbmc.kore.ui.viewgroups.GridRecyclerView
+        <org.tv.ricrdsson.ui.viewgroups.GridRecyclerView
             android:id="@+id/list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

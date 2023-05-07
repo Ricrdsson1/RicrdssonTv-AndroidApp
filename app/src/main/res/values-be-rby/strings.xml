@@ -302,7 +302,7 @@
     <string name="pause_call_incoming_title">Уваходны выклік</string>
     <string name="queue_on_kodi">Адправіць у чаргу ў Kodi</string>
     <string name="play_on_kodi">Прайграць у Kodi</string>
-    <string name="about_desc">\\0A9 2018 XBMC Foundation&lt;br&gt;&lt;br&gt; Калі ласка, ацаніце нас у &lt;b&gt;&lt;a href=market://details\?id=org.xbmc.kore&gt;Google Play&lt;/a&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; Калі вам патрэбная дапамога, наведайце &lt;a href=http://forum.kodi.tv/forumdisplay.php\?fid=129&gt;форум&lt;/a&gt;</string>
+    <string name="about_desc">\\0A9 2018 XBMC Foundation&lt;br&gt;&lt;br&gt; Калі ласка, ацаніце нас у &lt;b&gt;&lt;a href=market://details\?id=org.tv.ricrdsson&gt;Google Play&lt;/a&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; Калі вам патрэбная дапамога, наведайце &lt;a href=http://forum.kodi.tv/forumdisplay.php\?fid=129&gt;форум&lt;/a&gt;</string>
     <string name="about">Пра праграму</string>
     <string name="nav_drawer_items">Значкі бакавой панэлі</string>
     <string name="remote_bar_items">Значкі ніжняй панэлі</string>

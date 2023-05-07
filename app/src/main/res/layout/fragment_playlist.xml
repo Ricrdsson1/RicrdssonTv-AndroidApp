@@ -23,7 +23,7 @@
         android:id="@+id/include_info_panel"
         layout="@layout/info_panel" />
 
-    <org.xbmc.kore.ui.widgets.PlaylistsBar
+    <org.tv.ricrdsson.ui.widgets.PlaylistsBar
         android:id="@+id/playlists_bar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/buttonbar_height"
@@ -34,7 +34,7 @@
         app:tabMode="fixed" />
 
     <!-- Playlist -->
-    <org.xbmc.kore.ui.viewgroups.DynamicListView
+    <org.tv.ricrdsson.ui.viewgroups.DynamicListView
         android:id="@+id/playlist"
         android:layout_width="match_parent"
         android:layout_height="0dp"

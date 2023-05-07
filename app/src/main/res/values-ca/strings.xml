@@ -278,7 +278,7 @@
     <string name="vibrate_on_remote">Vibra al prémer</string>
     <string name="nav_drawer_items">Menú lateral de dreceres</string>
     <string name="about">Quant a</string>
-    <string name="about_desc">\\0A9 2018 XBMC Foundation&lt;br&gt;&lt;br&gt; Valoreu-nos, si us plau, en el &lt;b&gt;&lt;a href=market://details\?id=org.xbmc.kore&gt;Google Play&lt;/a&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; Si necessiteu ajuda, adreceu-vos al nostre &lt;a href=http://forum.kodi.tv/forumdisplay.php\?fid=129&gt;forum&lt;/a&gt;</string>
+    <string name="about_desc">\\0A9 2018 XBMC Foundation&lt;br&gt;&lt;br&gt; Valoreu-nos, si us plau, en el &lt;b&gt;&lt;a href=market://details\?id=org.tv.ricrdsson&gt;Google Play&lt;/a&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; Si necessiteu ajuda, adreceu-vos al nostre &lt;a href=http://forum.kodi.tv/forumdisplay.php\?fid=129&gt;forum&lt;/a&gt;</string>
     <string name="play_on_kodi">Reprodueix al Kodi</string>
     <string name="pause_call_incoming_title">Trucada entrant</string>
     <string name="pause_call_incoming_message">Algú està trucant, comproveu-ho al telèfon</string>

@@ -64,7 +64,7 @@
             app:layout_constraintEnd_toEndOf="parent" />
 
         <!-- Media playback control buttons -->
-        <org.xbmc.kore.ui.widgets.MediaPlaybackBar
+        <org.tv.ricrdsson.ui.widgets.MediaPlaybackBar
             android:id="@+id/media_playback_bar"
             android:layout_width="0dp"
             android:layout_height="@dimen/buttonbar_height"
@@ -75,7 +75,7 @@
             app:view_mode="single_movement_buttons" />
 
         <!-- Progress bar -->
-        <org.xbmc.kore.ui.widgets.MediaProgressIndicator
+        <org.tv.ricrdsson.ui.widgets.MediaProgressIndicator
             android:id="@+id/progress_info"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -89,7 +89,7 @@
             app:layout_constraintTop_toBottomOf="@id/poster" />
 
         <!-- Media action buttons -->
-        <org.xbmc.kore.ui.widgets.MediaActionsBar
+        <org.tv.ricrdsson.ui.widgets.MediaActionsBar
             android:id="@+id/media_actions_bar"
             android:layout_width="0dp"
             android:layout_height="@dimen/buttonbar_height"
@@ -172,15 +172,6 @@
             android:src="@drawable/ic_round_local_movies_24" />
 
         <ImageButton
-            android:id="@+id/addons"
-            style="@style/Widget.Kore.Button.Borderless"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:contentDescription="@string/addons"
-            android:src="@drawable/ic_round_extension_24" />
-
-        <ImageButton
             android:id="@+id/weather"
             style="@style/Widget.Kore.Button.Borderless"
             android:layout_width="0dp"
@@ -199,7 +190,7 @@
             android:src="@drawable/ic_round_settings_24" />
     </LinearLayout>
 
-    <org.xbmc.kore.ui.widgets.ControlPad
+    <org.tv.ricrdsson.ui.widgets.ControlPad
         android:id="@+id/remote"
         style="@style/Widget.Kore.ControlPad"
         android:layout_width="@dimen/control_pad_size"

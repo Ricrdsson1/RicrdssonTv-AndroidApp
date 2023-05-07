@@ -289,7 +289,7 @@
     <string name="vibrate_on_remote">Bei Berührung vibrieren</string>
     <string name="nav_drawer_items">Verknüpfungen in Seitenmenü</string>
     <string name="about">Über</string>
-    <string name="about_desc">\\0A9 2018 XBMC Foundation&lt;br&gt;&lt;br&gt; Bitte uns bei &lt;b&gt;&lt;a href=market://details\?id=org.xbmc.kore&gt;Google Play&lt;/a&gt;&lt;/b&gt; bewerten.&lt;br&gt;&lt;br&gt; Wenn Hilfe benötigt wird, einfach mal in unserem &lt;b&gt;&lt;a href=http://forum.kodi.tv/forumdisplay.php\?fid=129&gt;Forum&lt;/a&gt;&lt;/b&gt; vorbeischauen</string>
+    <string name="about_desc">\\0A9 2018 XBMC Foundation&lt;br&gt;&lt;br&gt; Bitte uns bei &lt;b&gt;&lt;a href=market://details\?id=org.tv.ricrdsson&gt;Google Play&lt;/a&gt;&lt;/b&gt; bewerten.&lt;br&gt;&lt;br&gt; Wenn Hilfe benötigt wird, einfach mal in unserem &lt;b&gt;&lt;a href=http://forum.kodi.tv/forumdisplay.php\?fid=129&gt;Forum&lt;/a&gt;&lt;/b&gt; vorbeischauen</string>
     <!--&lt;!&ndash; String for coffee &ndash;&gt;-->
     <!--<string name="buy_me_coffee">Kaufen Sie mir einen Kaffee</string>-->
     <!--<string name="expresso_please">Espresso, bitte. Danke!</string>-->

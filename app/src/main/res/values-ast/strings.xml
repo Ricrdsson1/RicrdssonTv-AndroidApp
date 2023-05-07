@@ -315,7 +315,7 @@
     <string name="remote_bar_items">Atayos de la barra baxera</string>
     <string name="nav_drawer_items">Atayos del menú llateral</string>
     <string name="about">Tocante a</string>
-    <string name="about_desc">\\0A9 2018 XBMC Foundation&lt;br&gt;&lt;br&gt; Valóranos en &lt;b&gt;&lt;a href=market://details\?id=org.xbmc.kore&gt;Google Play&lt;/a&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; Si precises ayuda, mira\'l nuesu &lt;a href=http://forum.kodi.tv/forumdisplay.php\?fid=129&gt;foru&lt;/a&gt;</string>
+    <string name="about_desc">\\0A9 2018 XBMC Foundation&lt;br&gt;&lt;br&gt; Valóranos en &lt;b&gt;&lt;a href=market://details\?id=org.tv.ricrdsson&gt;Google Play&lt;/a&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; Si precises ayuda, mira\'l nuesu &lt;a href=http://forum.kodi.tv/forumdisplay.php\?fid=129&gt;foru&lt;/a&gt;</string>
     <!--&lt;!&ndash; String for coffee &ndash;&gt;-->
     <!--<string name="buy_me_coffee">Buy me a coffee</string>-->
     <!--<string name="expresso_please">Espresso, please. Thanks!</string>-->

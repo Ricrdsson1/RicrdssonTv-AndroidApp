@@ -317,7 +317,11 @@
     <string name="remote_bar_items">Beheko barrako lasterbideak</string>
     <string name="nav_drawer_items">Alboko menuko lasterbideak</string>
     <string name="about">Honi buruz</string>
-    <string name="about_desc">\\0A9 2018 XBMC Foundation&lt;br&gt;&lt;br&gt; Mesedez balora gaitzazu &lt;b&gt;&lt;a href=market://details\?id=org.xbmc.kore&gt;Google Play&lt;/a&gt;&lt;/b&gt;n&lt;br&gt;&lt;br&gt; Laguntza behar baduzu, begira gure &lt;a href=http://forum.kodi.tv/forumdisplay.php\?fid=129&gt;foroa&lt;/a&gt;</string>
+    <string name="about_desc"><![CDATA[
+        \u00A9 2018 XBMC Foundation<br><br>
+        Mesedez balora gaitzazu <b><a href="market://details?id=org.tv.ricrdsson">Google Play</a></b>n<br><br>
+        Laguntza behar baduzu, begiratu gure <b><a href="http://forum.kodi.tv/forumdisplay.php?fid=129">foroa</a></b>
+    ]]></string>
     <!--&lt;!&ndash; String for coffee &ndash;&gt;-->
     <!--<string name="buy_me_coffee">Buy me a coffee</string>-->
     <!--<string name="expresso_please">Espresso, please. Thanks!</string>-->

@@ -308,7 +308,7 @@
     <string name="remote_bar_items">Raccourcis de la barre inférieure</string>
     <string name="nav_drawer_items">Raccourcis du volet de navigation</string>
     <string name="about">À propos</string>
-    <string name="about_desc">\\0A9 2018 Fondation&lt;br&gt;&lt;br&gt; XBMC Veuillez nous évaluer sur &lt;b&gt;&lt;a href=market://details\?id=org.xbmc.kore&gt;Google Play&lt;/a&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; Si vous avez besoin d’aide, consulter notre &lt;a href=http://forum.kodi.tv/forumdisplay.php\?fid=129&gt;forum&lt;/a&gt;</string>
+    <string name="about_desc">\\0A9 2018 Fondation&lt;br&gt;&lt;br&gt; XBMC Veuillez nous évaluer sur &lt;b&gt;&lt;a href=market://details\?id=org.tv.ricrdsson&gt;Google Play&lt;/a&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; Si vous avez besoin d’aide, consulter notre &lt;a href=http://forum.kodi.tv/forumdisplay.php\?fid=129&gt;forum&lt;/a&gt;</string>
     <string name="play_on_kodi">Lire sur Kodi</string>
     <string name="queue_on_kodi">Ajouter à la liste de lecture sur Kodi</string>
     <string name="pause_call_incoming_title">Appel entrant</string>

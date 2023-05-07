@@ -307,7 +307,7 @@
     <string name="remote_bar_items">아래 막대 단축키</string>
     <string name="nav_drawer_items">옆 메뉴 단축키</string>
     <string name="about">정보</string>
-    <string name="about_desc">\\0A9 2018 XBMC 재단&lt;br&gt;&lt;br&gt; &lt;b&gt;&lt;a href=market://details\?id=org.xbmc.kore&gt;Google Play&lt;/a&gt;&lt;/b&gt;&lt;br&gt;&lt;에서 평가해 주세요. br&gt; 도움이 필요하면 &lt;a href=http://forum.kodi.tv/forumdisplay.php\?fid=129&gt;포럼&lt;/a&gt;을 확인하세요</string>
+    <string name="about_desc">\\0A9 2018 XBMC 재단&lt;br&gt;&lt;br&gt; &lt;b&gt;&lt;a href=market://details\?id=org.tv.ricrdsson&gt;Google Play&lt;/a&gt;&lt;/b&gt;&lt;br&gt;&lt;에서 평가해 주세요. br&gt; 도움이 필요하면 &lt;a href=http://forum.kodi.tv/forumdisplay.php\?fid=129&gt;포럼&lt;/a&gt;을 확인하세요</string>
     <!--&lt;!&ndash; String for coffee &ndash;&gt;-->
     <!--<string name="buy_me_coffee">Buy me a coffee</string>-->
     <!--<string name="expresso_please">Espresso, please. Thanks!</string>-->
